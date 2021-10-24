@@ -1,0 +1,8 @@
+envvars:
+  - name: BIKE_SHOP_SNOWFLAKE_ACCOUNT
+  - name: BIKE_SHOP_DBT_SVC
+  - name: BIKE_SHOP_DBT_USER
+  - name: BIKE_SHOP_DBT_PASS
+  - name: BIKE_SHOP_DB
+  - name: BIKE_SHOP_WH
+  - name: BIKE_SHOP_SCHEMA

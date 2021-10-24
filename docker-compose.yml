@@ -1,0 +1,16 @@
+version: '3'
+services:
+  dbt:
+    image: fishtownanalytics/dbt:0.20.2
+    env_file: .env
+    volumes:
+      - ./bike_shop:/work
+      - ./dbt:/dbt
+    working_dir: /work
+
+  envvars:
+    image: flemay/envvars:0.0.6
+    env_file: .env
+    working_dir: /work
+    volumes:
+      - .:/work
