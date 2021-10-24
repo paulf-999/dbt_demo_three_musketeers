@@ -19,7 +19,7 @@ Demo of using 3 Musketeers to setup and configure a dbt project.
 * It leverages `Make` as an orchestration tool to test, build, run, and deploy applications using `Docker` and `Docker Compose`
 * The `Make` and `Docker/Compose` commands for each application are maintained as part of the application’s source code and are invoked in the same way whether run locally or on a CI/CD server.
 
-    ![image info](pictures/3-musk-image.svg)
+    ![image info](img/3-musk-image.svg)
 
 The benefits of using 3 Musketeers are:
 
