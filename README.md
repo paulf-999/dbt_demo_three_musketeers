@@ -1,4 +1,4 @@
-# dbt Demo using 3 Musketeers
+# dbt emo using 3 Musketeers
 
 Demo of using 3 Musketeers to setup and configure a dbt project.
 
