@@ -54,5 +54,5 @@ Before you begin, ensure you have the following installed
 ### How-to run
 
 1. Install the prerequisites libs by running: `make deps`
-2. Configure your input dbt models within the dbt folder `bin/dbt_setup_automation/`
+2. Configure your input dbt models within the dbt folder `/bin/dbt_setup_automation/`
 3. Run `make install` to build your dbt project and validate the connectivity
