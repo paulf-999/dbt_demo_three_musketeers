@@ -9,10 +9,7 @@ Demo of using 3 Musketeers to setup and configure a dbt project.
 1. High-level summary
 2. Getting started
     * Prerequisites
-    * Installation
     * How-to run
-3. Help
-4. Folder contents
 
 ---
 
