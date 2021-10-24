@@ -27,7 +27,25 @@ clean:
 validate: .env
 	$(info [+] Verify the connection to the source DB)
 	${docker_compose_cmd} dbt debug ${dbt_profile}
-.PHONY: validate
+
+run_model:
+	$(info [+] Run the DBT model)
+	dbt run ${dbt_profile}
+
+test_model:
+	$(info [+] Test the DBT model. Note: this is a schema test only and is useful only for loading new data (enforces uniqueness))
+	# prerequisite: populate ${DBT_PROJECT_NAME}/models/schema.yml with any desired tests
+	dbt test ${dbt_profile}
+
+data_test_model:
+	$(info [+] Test the DBT model. Note: this tests the actual data against predefined business rules)
+	# prerequisite: populate ${DBT_PROJECT_NAME}/models/schema.yml with any desired tests
+	dbt test --data ${dbt_profile}
+
+document_model:
+	$(info [+] Document the DBT model)
+	dbt docs generate ${dbt_profile}
+	dbt docs serve --profiles-dir profiles
 
 .env:
 	touch .env
