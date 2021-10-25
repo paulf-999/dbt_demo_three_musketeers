@@ -49,7 +49,7 @@ document_model:
 
 .env:
 	touch .env
-	docker-compose run --rm envvars validate
-	docker-compose run --rm envvars envfile --overwrite
-	docker-compose run --rm envvars ensure
+	${docker_compose_cmd} envvars validate
+	${docker_compose_cmd} envvars envfile --overwrite
+	${docker_compose_cmd} envvars ensure
 .PHONY: .env
